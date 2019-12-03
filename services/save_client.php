@@ -6,5 +6,7 @@
 	$email = isset($_POST["email"]) ?  $_POST["email"] : "";
 	
 	$result = $conn->query("INSERT INTO clients (name, lastname, email, phone) VALUES ('$name','$lastname','$email','$phone')");
-
+	if($result){
+		header('Location: ./index.php');
+	}
 ?>
