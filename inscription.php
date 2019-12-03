@@ -11,7 +11,7 @@
 					</div>
 					<div class="form-group col-md-6 col-12">
 						<label for="inputLastname">Apellido</label>
-						<input type="email" class="form-control" id="inputLastname" placeholder="Apellido"
+						<input type="text" class="form-control" id="inputLastname" placeholder="Apellido"
 							name="lastname">
 					</div>
 					<div class="form-group col-md-6 col-12">
