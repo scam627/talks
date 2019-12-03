@@ -2,7 +2,7 @@
 <section>
 	<div class="row justify-content-center">
 		<div class="col-5 m-5 card p-5">
-			<form action="../services/save_client.php" method="post">
+			<form action="./services/save_client.php" method="post">
 				<div class="form-row">
 					<div class="form-group col-md-6 col-12">
 						<label for="inputName">Nombre</label>
