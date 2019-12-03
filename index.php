@@ -1,9 +1,9 @@
 <?php include("./router.php"); ?>
 <?php include("./templates/header.php"); ?>
 <section id="render" class="row justify-content-center">
-	<div class="col-7 mt-5">
+	<div class="col-12 col-md-12 mt-5">
 		<h1 class="text-center my-3">Escalando hacia una vida extraordinaria</h1>
-		<div class="card text-center">
+		<div class="card mx-1 text-center">
 			<div class="card-header">
 				Bienvenid@ <span class="badge badge-success"><?php echo $_SESSION["name"]?></span>
 			</div>
