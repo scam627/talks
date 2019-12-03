@@ -3,8 +3,10 @@
 	<div class="row justify-content-center">
 		<div class="col-10 col-md-5 m-5 card p-5">
 			<div class="text-center">
-				<img src="./assets/images/inscription.png" class="img-fluid rounded" alt="...">
+				<img src="./assets/images/cool.png" class="img-fluid rounded" style="height: 150px; width: 150px"
+					alt="...">
 			</div>
+			<br>
 			<form action="./services/save_client.php" method="post">
 				<div class="form-row">
 					<div class="form-group col-md-6 col-12">

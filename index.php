@@ -1,1 +1,3 @@
-<?php header("Location: ./inscription.php");?>
+<?php 
+	header("Location: ./router.php")
+?>

@@ -7,6 +7,8 @@
 	
 	$result = $conn->query("INSERT INTO clients (name, lastname, email, phone) VALUES ('$name','$lastname','$email','$phone')");
 	if($result){
+		session_start();
+		$_SESSION["name"];
 		header('Location: ./index.php');
 	}
 ?>
