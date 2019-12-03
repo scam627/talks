@@ -1,3 +1,3 @@
 <?php
-	include("./config_db.php");
+	include("../config_db.php");
 ?>
