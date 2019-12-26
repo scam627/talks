@@ -1,9 +1,9 @@
 <?php include("./router.php"); ?>
 <?php include("./templates/header.php"); ?>
 <section id="render" class="row justify-content-center">
-	<div class="container mt-3 pt-3 border rounded">
+	<div class="container mt-2 pt-5 border rounded">
 		<div class="row justify-content-center">
-			<div class="col-11 col-md-8">
+			<div class="col-11 col-md-11">
 				<img id="image-questions" src="./assets/images/1.png" class="img-fluid" style="border-radius: 15px"
 					alt="Responsive image">
 			</div>
