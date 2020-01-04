@@ -3,7 +3,7 @@
 <section id="render" class="row justify-content-center">
 	<div class="container mt-2 pt-5 border rounded">
 		<div class="row p-5 justify-content-center">
-			<div class="embed-responsive rounded col-9 embed-responsive-16by9">
+			<div class="embed-responsive rounded col-12 col-md-9 embed-responsive-16by9">
 				<iframe id="image-questions" class="embed-responsive-item" src="./assets/videos/1.mp4"
 					allowfullscreen></iframe>
 			</div>
