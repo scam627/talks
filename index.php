@@ -21,7 +21,8 @@
 							<p class="card-text">Tomate Tu Tiempo, piensa, medita, lee, lee mucho.....en un libro puedes
 								encontrar
 								la sabiduría o la respuesta que estas buscando.....</p>
-							<a href="response.php" class="btn btn-primary">Iniciar</a>
+							<button onclick="nextStep()" class="btn btn-primary">Continuar</button>
+							<a href="response.php" hidden id="response"></a>
 						</div>
 						<div class="card-footer text-muted">
 							<span>Copyirght&#x00A9; Andrés Mauricio Jaramillo Alvarez 2019</span>
@@ -32,5 +33,15 @@
 		</div>
 	</div>
 </section>
-
+<script>
+	let token = ["dIkEwi27gqd","eIraZTHxUIc"];
+	let curr = 0;
+	function nextStep(){
+		if(curr == 2) document.getElementById("response").click();
+		else{
+			let iframe = document.getElementById("image-questions").src = `https://www.powtoon.com/embed/${token[curr]}`
+			curr += 1;
+		}			
+	}
+</script>
 <?php include("./templates/footer.php"); ?>
