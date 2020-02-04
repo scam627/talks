@@ -65,7 +65,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
-	<script src="./src/js/jquery-3.2.1.min.js"></script>
+	<script src="../src/js/jquery-3.2.1.min.js"></script>
 	<script src="./src/js/jquery.min.js"></script>
 	<script src="./src/js/jquery-ui.min.js"></script>
 	<script src="./src/js/jquery-ui-touch-punch.min.js"></script>
@@ -101,6 +101,10 @@
 					user: user
 				},
 				success: function(el) {
+					if(curr == 11) {
+						alert("Has terminado la encuesta");
+						window.location.replace("https://andresjaramilloalvarez.com/talks/index.php");	
+					}
 					curr = (curr + 1) % 12;
 					document.getElementById("image-questions").src = `./assets/videos/${curr + 1}.mp4`;
 					console.log(el);
