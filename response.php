@@ -48,8 +48,8 @@
 								<img id="emoji-questions" src="../assets/emojis/theme-two/0.png" class="img-fluid"
 								alt="Responsive image">
 						</div>
-						<div class="form-group text-center col-12">
-							<input value="0" step="1" min="0" max="9" type="range"  id="content" onchange="emojiDeploy()">
+						<div class="form-group text-center col-12" id="render">
+							<input value="1" step="1" min="1" max="10" type="range"  id="content" onchange="emojiDeploy()">
 						</div>
 					</div>
 					<center>
