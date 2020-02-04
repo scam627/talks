@@ -34,28 +34,28 @@
 
 <body id="cnt" class="bg-white">
 	<section class="container-fluid">
-		<div class="row justify-content-center mt-5">
+		<div class="row justify-content-center mt-md-5">
 			<div class=" col-12 embed-responsive rounded col-12 col-md-9 embed-responsive-16by9">
 				<iframe id="image-questions" class="embed-responsive-item" src="./assets/videos/1.mp4"
 					allowfullscreen></iframe>
 			</div>
 		</div>
-		<div>
+		<div class="border-bottom">
 			<div id="render-query" class="row justify-content-center my-4">
-				<div class="col-6 mb-2">
-					<center>
-						<img id="emoji-questions" src="../assets/emojis/theme-two/0.png" class="img-fluid"
-							alt="Responsive image">
-					</center>
-				</div>
 				<form class="p-2 col-10 col-md-7" action="javascript:void(0);">
 					<div class="form-row">
+						<div class="col-12">
+								<img id="emoji-questions" src="../assets/emojis/theme-two/0.png" class="img-fluid"
+								alt="Responsive image">
+						</div>
 						<div class="form-group text-center col-12">
 							<input value="0" step="1" min="0" max="9" type="range"  id="content" onchange="emojiDeploy()">
 						</div>
 					</div>
 					<center>
-						<button type="button" onclick="saveAns()" class="btn btn-dark rounded-pill">Siguiente</button>
+						<div class="col-md-3 col-6">
+							<button type="button" onclick="saveAns()" class="btn btn-sm rounded-pill" style="background-color: #343a40; color: white">Siguiente</button>
+						</div>
 					</center>
 				</form>
 			</div>
