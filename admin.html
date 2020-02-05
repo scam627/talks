@@ -99,8 +99,8 @@
 			});
 
 			function setChart(data) {
-				console.log(data);
 				var ctx = document.getElementById("myChart");
+				console.log(JSON.parse(data));
 				var myChart = new Chart(ctx, {
 					type: "bar",
 					data: {
@@ -121,7 +121,7 @@
 						datasets: [
 							{
 								label: "Calificacion",
-								data: data,
+								data: JSON.parse(data),
 								backgroundColor: [
 									"rgba(255, 99, 132, 0.2)",
 									"rgba(255, 99, 132, 0.2)",
