@@ -98,8 +98,8 @@
 				}
 			});
 
+			var ctx = document.getElementById("myChart");
 			function setChart(data) {
-				var ctx = document.getElementById("myChart");
 				console.log(JSON.parse(data));
 				var myChart = new Chart(ctx, {
 					type: "bar",
