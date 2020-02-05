@@ -99,10 +99,12 @@
 			});
 
 			var ctx = document.getElementById("myChart");
+			var myChart;
 			function setChart(data) {
 				// ctx.clearRect(0, 0, ctx.width, ctx.height);
 				console.log(JSON.parse(data));
-				var myChart = new Chart(ctx, {
+				if (myChart != undefined) myChart.reset();
+				myChart = new Chart(ctx, {
 					type: "bar",
 					data: {
 						labels: [
