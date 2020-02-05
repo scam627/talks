@@ -100,7 +100,7 @@
 
 			var ctx = document.getElementById("myChart");
 			function setChart(data) {
-				ctx.clearRect(0, 0, ctx.width, ctx.height);
+				// ctx.clearRect(0, 0, ctx.width, ctx.height);
 				console.log(JSON.parse(data));
 				var myChart = new Chart(ctx, {
 					type: "bar",
