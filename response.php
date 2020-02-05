@@ -105,6 +105,8 @@
 						alert("Has terminado la encuesta");
 						window.location.replace("https://andresjaramilloalvarez.com/talks/index.php");	
 					}
+					document.getElementById('render').innerHTML = `<input value="1" step="1" min="1" max="10" type="range"  id="content" onchange="emojiDeploy()">`;
+					$('form').naoInput();
 					curr = (curr + 1) % 12;
 					document.getElementById("image-questions").src = `./assets/videos/${curr + 1}.mp4`;
 					console.log(el);
