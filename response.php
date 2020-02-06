@@ -106,6 +106,7 @@
 						window.location.replace("https://andresjaramilloalvarez.com/talks/index.php");	
 					}
 					document.getElementById('render').innerHTML = `<input value="1" step="1" min="1" max="10" type="range"  id="content" onchange="emojiDeploy()">`;
+					document.getElementById("emoji-questions").src = `../assets/emojis/theme-two/1.png`;
 					$('form').naoInput();
 					curr = (curr + 1) % 12;
 					document.getElementById("image-questions").src = `./assets/videos/${curr + 1}.mp4`;
