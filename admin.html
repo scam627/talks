@@ -11,7 +11,7 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="row justify-content-center m-1 m-md-5 p-md-5 py-3">
+		<div class="row justify-content-center m-1 m-md-5 p-1">
 			<div class="col-12 col-md-8">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item">
@@ -82,7 +82,8 @@
 					url: `./services/get_answers.php`,
 					data: { user: id },
 					success: function(data) {
-						setChart(data);
+						let dataOfChart = JSON.parse(data);
+						setChart(dataOfChart, "radar", el.value);
 					}
 				});
 			}
@@ -100,12 +101,10 @@
 
 			var ctx = document.getElementById("myChart");
 			var myChart;
-			function setChart(data) {
-				// ctx.clearRect(0, 0, ctx.width, ctx.height);
-				console.log(JSON.parse(data));
+			function setChart(data, type, user) {
 				if (myChart != undefined) myChart.reset();
 				myChart = new Chart(ctx, {
-					type: "radar",
+					type: type,
 					data: {
 						labels: [
 							"Relación de pareja",
@@ -123,10 +122,10 @@
 						],
 						datasets: [
 							{
-								label: "respuesta",
+								label: user,
 								backgroundColor: "rgb(255,242,41,0.3)",
 								borderColor: "rgb(255,242,41, 0.6)",
-								data: JSON.parse(data)
+								data: data
 							}
 						]
 					}
