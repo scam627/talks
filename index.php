@@ -25,7 +25,8 @@
 							<a href="response.php" hidden id="response"></a>
 						</div>
 						<div class="card-footer text-muted">
-							<span>Copyirght&#x00A9; Andrés Mauricio Jaramillo Alvarez 2019</span>
+							<span>Copyirght&#x00A9; Andrés Mauricio Jaramillo Alvarez 2019</span><br>
+							<a href="./contact.php">Deseo recomendar a alguien</a>
 						</div>
 					</div>
 				</div>
